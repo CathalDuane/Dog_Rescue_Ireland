@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 	<head>
 		<title>Newsletter</title>
         
@@ -68,18 +68,18 @@
                             
                         <div class = "row monthListClass" id = "monthList">
                             <!--Cathal: A tags to link each month to the corresponding div/h1 -->
-                                <a class = "col-sm-12 col-lg-4 float-left"href="#jan">January</a>
-                                <a class = "col-sm-12 col-lg-4 float-left"href="#feb">February</a>
-                                <a class = "col-sm-12 col-lg-4 float-left"href="#march">March</a>
-                                <a class = "col-sm-12 col-lg-4 float-left"href="#april">April</a>
-                                <a class = "col-sm-12 col-lg-4 float-left"href="#may">May</a>
-                                <a class = "col-sm-12 col-lg-4 float-left"href="#june">June</a>
-                                <a class = "col-sm-12 col-lg-4 float-left"href="#july">July</a>
-                                <a class = "col-sm-12 col-lg-4 float-left"href="#aug">August</a>
-                                <a class = "col-sm-12 col-lg-4 float-left"href="#sept">September</a>
-                                <a class = "col-sm-12 col-lg-4 float-left"href="#oct">October</a>
-                                <a class = "col-sm-12 col-lg-4 float-left"href="#nov">November</a>
-                                <a class = "col-sm-12 col-lg-4 float-left"href="#dec">December</a>
+                                <a class = "col-sm-12 col-lg-4 float-left" href="#jan">January</a>
+                                <a class = "col-sm-12 col-lg-4 float-left" href="#feb">February</a>
+                                <a class = "col-sm-12 col-lg-4 float-left" href="#march">March</a>
+                                <a class = "col-sm-12 col-lg-4 float-left" href="#april">April</a>
+                                <a class = "col-sm-12 col-lg-4 float-left" href="#may">May</a>
+                                <a class = "col-sm-12 col-lg-4 float-left" href="#june">June</a>
+                                <a class = "col-sm-12 col-lg-4 float-left" href="#july">July</a>
+                                <a class = "col-sm-12 col-lg-4 float-left" href="#aug">August</a>
+                                <a class = "col-sm-12 col-lg-4 float-left" href="#sept">September</a>
+                                <a class = "col-sm-12 col-lg-4 float-left" href="#oct">October</a>
+                                <a class = "col-sm-12 col-lg-4 float-left" href="#nov">November</a>
+                                <a class = "col-sm-12 col-lg-4 float-left" href="#dec">December</a>
                         </div>
                                             
                     </div>
@@ -91,7 +91,6 @@
            
                 <!--January content-->
                 <section class = "container">
-                   
                         <h1 id = "jan" class = "monthH1">January</h1>
                         <div class = "row">
                         <img class = "mx-auto col-lg-6 col-sm-12" src="../Images/Site.jpg" class="imagesSlider" alt="Construction site">
@@ -115,7 +114,6 @@
                                 typesetting, remaining essentially unchanged.  
                             </p>
                         </div>
-                    </div>
                 </section>
                 <hr>
 
@@ -138,14 +136,15 @@
                             typesetting, remaining essentially unchanged.  
                         </p>
                 
-                        <img class = "mx-auto col-lg-6 col-sm-12" src="../Images/Site.jpg" class="imagesSlider" alt="Construction site">  
+                        <img class = "mx-auto col-lg-6 col-sm-12" src="../Images/Site.jpg" alt="Construction site">  
                                     
                     </div>
                 </section>
                 <hr>
                         
                 <!--Cathal: March content-->
-                <section class = "container" >
+
+                <section class = "container " >
                     <h1 id = "march" class = "monthH1" >March</h1>
                     <h2>New Dogs</h2>
                     <div class = "row">
@@ -159,17 +158,17 @@
                         <!--Cathal: jQuery image slider (bootstrap stopped working on layout)-->
                         <div id="slider" class = "mx-auto col-lg-6 col-sm-12">
                             <!--Prev/next buttons. I added javascript:void() because when the buttons were clicked it brought the user back to the top of the site -->
-                            <a href="javascript:void();" class="control_next">></a>
-                            <a href="javascript:void();" class="control_prev"><</a>
+                            <a href="javascript:void();" class="control_next">-></a>
+                            <a href="javascript:void();" class="control_prev"><-</a>
                             <ul>
                                 <li>
-                                    <img src="../Images/dog2.jpg" class="imagesSlider" alt="Daia">
+                                    <img src="../Images/dog2.jpg"  alt="Daia">
                                 </li>
                                 <li>
-                                    <img src="../Images/dog1.jpg" class="imagesSlider" alt="dog1">
+                                    <img src="../Images/dog1.jpg"  alt="dog1">
                                 </li>
                                 <li>
-                                    <img src="../Images/dog3.jpg" class="imagesSlider" alt="dog2">
+                                    <img src="../Images/dog3.jpg"  alt="dog2">
                                 </li>
                             </ul>  
                         </div>  
@@ -203,7 +202,7 @@
                             typesetting, remaining essentially unchanged.   
                         </p>
                         <!--Cathal:Added image-->
-                        <img class = "mx-auto col-lg-6 col-sm-12" src="../Images/Site.jpg" class="imagesSlider" alt="Contruction site">
+                        <img class = "mx-auto col-lg-6 col-sm-12" src="../Images/Site.jpg" alt="Contruction site">
                     </div>
                 </section>
                 <hr>
@@ -213,9 +212,9 @@
                     <h1 id = "may" class = "monthH1">May</h1>
                     <h2>Dog checkup</h2>
                     <div class = "row">
-                         <!--Added mp4 video using source tag-->
-                         <video class = "mx-auto col-lg-6 col-sm-12" controls>
-                            <source src="../Images/Dog_vid.mp4" type="video/mp4" alt = "dog at vet">
+                         <!--Added mp4 video using source tag-. Title instead of alt-->
+                         <video class = "mx-auto col-lg-6 col-sm-12" controls title = "Dog at vet">
+                            <source src="../Images/Dog_vid.mp4" type="video/mp4">
                         </video>
 
                         <p class = "mx-auto col-lg-6 col-sm-12">
@@ -231,7 +230,7 @@
                 <hr>
 
                 <!--June content-->
-                </div class = "row">
+                <section>
                     <h1 id = "june" class = "monthH1">June</h1>
                     <h2>Meet the Dogs</h2>
                     <div class = "row">
@@ -248,13 +247,13 @@
                         <div class="carousel-inner">
                             <div class="carousel-item active" data-interval="2000">
                             <!-- added paths to images-->
-                            <img src="../Images/dog1.jpg" class="d-block w-100" width:800px height:600px alt="dog 1">
+                            <img src="../Images/dog1.jpg" class="d-block w-100" alt="dog 1">
                             </div>
                             <div class="carousel-item" data-interval="2000">
-                            <img src="../Images/dog2.jpg" class="d-block w-100" width:800px height:600px alt="daia">
+                            <img src="../Images/dog2.jpg" class="d-block w-100" alt="daia">
                             </div>
                             <div class="carousel-item" data-interval="500">
-                            <img src="../Images/dog3.jpg" class="d-block w-100" width:800px height:600px alt="dog 2">
+                            <img src="../Images/dog3.jpg" class="d-block w-100" alt="dog 2">
                             </div>
                         </div>
                         <!--Prev/next buttons-->
@@ -269,6 +268,7 @@
                         </div>
                         
                     </div>
+                </section>
                 </div>
                 <hr>
 
@@ -331,7 +331,7 @@
 
                 <!--August content-->
                 <section class = "container">
-                    <h1 id = "dec" class = "monthH1">August</h1>
+                    <h1 id = "aug" class = "monthH1">August</h1>
                     <h2>New Construction</h2>
                     <div class = "row">
                         <p>
@@ -348,7 +348,7 @@
 
                 <!--October content-->
                 <section class = "container">
-                    <h1 id = "dec" class = "monthH1">October</h1>
+                    <h1 id = "oct" class = "monthH1">October</h1>
                     <h2>New Construction</h2>
                     <div class = "row">
                         <p>
@@ -365,7 +365,7 @@
 
                 <!--November content-->
                 <section class = "container">
-                    <h1 id = "dec" class = "monthH1">November</h1>
+                    <h1 id = "nov" class = "monthH1">November</h1>
                     <h2>New Construction</h2>
                     <div class = "row">
                         <p>
@@ -406,7 +406,7 @@
             <form id = "subscribeForm">
                 <label for="emailSub" >Email</label>
                 <!--text Input-->
-                <input type="text" name="UserEmail" id="UserEmail" value="" size="32" />
+                <input type="text"  name="UserEmail" id="UserEmail" value="" size="32" />
                 <!--Submit button-->
                 <input type="submit" value="Submit" id="btn-submit" />
             </form>
