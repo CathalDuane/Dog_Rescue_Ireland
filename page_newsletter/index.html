@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-<!DOCTYPE html>
 <html>
 	<head>
 		<title>Newsletter</title>
@@ -14,27 +13,20 @@
 
         <!-- Cathal: jQuery Light slider links -->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-      
-        <!--GoogleFonts-Header: Corben-->
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Corben:wght@700&display=swap" rel="stylesheet">
-        
-        <!--GoogleFonts botdy text: Nobile-->
-        <link href="https://fonts.googleapis.com/css2?family=Corben:wght@700&family=Nobile&display=swap" rel="stylesheet">
     
     
     </head> 
 	<body class="Main">
+        <!--James: header--> 
 		<div class="container">
 			<img src="../img/dogHeader2.jpeg" class="img" alt="Adopt Dont Shop">
 		</div>
 
-        <!--nav bar-->  
+        <!--James: nav bar--> 
+        <!--Cathal: pathing and links for pages.--> 
         <section class= "row">    
             <nav class= "navbar navbar-expand-lg navbar-light bg-light">
 
-        
             <div class="container">
                 <nav class="navbar navbar-light" style="background-color: white;">
                 <a class="navbar-brand" href="#"><img src="../img/DogLogo2.jpg" alt="Dog Rescue Ireland" height="100" width="100"></a>
@@ -66,14 +58,15 @@
         <!--Cathal: Search bar/Scroll to month-->
         <section class = "container">
            <div class = "row">
-               <h1>Newsletter</h1>
-               <p>Keep up to date with what we are doing at Dog Rescue Ireland with our monthly newsletter</p>
+                <h1>Newsletter</h1>
+                <p>Keep up to date with what we are doing at Dog Rescue Ireland with our monthly newsletter</p>
 
-            
-               <button onclick = "monthselect()" class = "col-sm-12 col-lg-4 monthUserSelect"> Find events by month</button>
+                <!--Cathal: Dropdown Button-->   
+                <button onclick = "monthselect()" class = "mx-auto col-sm-12 col-lg-4 monthUserSelect"> Find events by month</button>
                     <div id = "myDropdown" class = "dropDownContent">
-                        
-                            <div class = "row" id = "monthList">
+                            
+                        <div class = "row monthListClass" id = "monthList">
+                            <!--Cathal: A tags to link each month to the corresponding div/h1 -->
                                 <a class = "col-sm-12 col-lg-4 float-left"href="#jan">January</a>
                                 <a class = "col-sm-12 col-lg-4 float-left"href="#feb">February</a>
                                 <a class = "col-sm-12 col-lg-4 float-left"href="#march">March</a>
@@ -86,272 +79,337 @@
                                 <a class = "col-sm-12 col-lg-4 float-left"href="#oct">October</a>
                                 <a class = "col-sm-12 col-lg-4 float-left"href="#nov">November</a>
                                 <a class = "col-sm-12 col-lg-4 float-left"href="#dec">December</a>
-                            </div>
-                                          
+                        </div>
+                                            
                     </div>
            </div>
-       
         </section>
+        <hr>
 
         <section class = "container content">
-            <div class = "row">
+           
                 <!--January content-->
-                </div id = "jan" class = "col-lg containerNews yellow">
-                    <h1 id = "jan" class = "monthH1">January</h1>
-                    <p>
-                        is simply dummy text of the printing and typesetting industry. 
-                        Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
-                        when an unknown printer took a galley of type and scrambled it to make a type specimen
-                        book. It has survived not only five centuries, but also the leap into electronic 
-                        typesetting, remaining essentially unchanged.  
+                <section class = "container">
+                   
+                        <h1 id = "jan" class = "monthH1">January</h1>
+                        <div class = "row">
+                        <img class = "mx-auto col-lg-6 col-sm-12" src="../Images/Site.jpg" class="imagesSlider" alt="Construction site">
+                            <p class = "mx-auto col-lg-6 col-sm-12">
+                                is simply dummy text of the printing and typesetting industry. 
+                                Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
+                                when an unknown printer took a galley of type and scrambled it to make a type specimen
+                                book. It has survived not only five centuries, but also the leap into electronic 
+                                typesetting, remaining essentially unchanged.  
 
-                        is simply dummy text of the printing and typesetting industry. 
-                        Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
-                        when an unknown printer took a galley of type and scrambled it to make a type specimen
-                        book. It has survived not only five centuries, but also the leap into electronic 
-                        typesetting, remaining essentially unchanged.  
+                                is simply dummy text of the printing and typesetting industry. 
+                                Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
+                                when an unknown printer took a galley of type and scrambled it to make a type specimen
+                                book. It has survived not only five centuries, but also the leap into electronic 
+                                typesetting, remaining essentially unchanged.  
 
-                        is simply dummy text of the printing and typesetting industry. 
-                        Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
-                        when an unknown printer took a galley of type and scrambled it to make a type specimen
-                        book. It has survived not only five centuries, but also the leap into electronic 
-                        typesetting, remaining essentially unchanged.  
-                    </p>
-                </div>
+                                is simply dummy text of the printing and typesetting industry. 
+                                Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
+                                when an unknown printer took a galley of type and scrambled it to make a type specimen
+                                book. It has survived not only five centuries, but also the leap into electronic 
+                                typesetting, remaining essentially unchanged.  
+                            </p>
+                        </div>
+                    </div>
+                </section>
                 <hr>
 
                 <!--Feb content-->
-                <div class = "row">
-                    <h1 id = "feb" class = "monthH1">Feb</h1>
-                    <h2>New Construction</h2>
+                <section class = "section">
+                    <div class = "row">
+                        <h1 id = "feb" class = "monthH1">Feb</h1>
+                        <h2>New Construction</h2>
 
-                    <p class = "col-lg-4 col-sm-12" >
-                        is simply dummy text of the printing and typesetting industry. 
-                        Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
-                        when an unknown printer took a galley of type and scrambled it to make a type specimen
-                        book. It has survived not only five centuries, but also the leap into electronic 
-                        typesetting, remaining essentially unchanged.
-                        is simply dummy text of the printing and typesetting industry. 
-                        Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
-                        when an unknown printer took a galley of type and scrambled it to make a type specimen
-                        book. It has survived not only five centuries, but also the leap into electronic 
-                        typesetting, remaining essentially unchanged.  
-                    </p>
-              
-                    <img class = "col-lg-8 col-sm-12" src="../Images/Site.jpg" class="imagesSlider" alt="dog">  
-                                
-                </div>
+                        <p class = "mx-auto col-lg-6 col-sm-12" >
+                            is simply dummy text of the printing and typesetting industry. 
+                            Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
+                            when an unknown printer took a galley of type and scrambled it to make a type specimen
+                            book. It has survived not only five centuries, but also the leap into electronic 
+                            typesetting, remaining essentially unchanged.
+                            is simply dummy text of the printing and typesetting industry. 
+                            Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
+                            when an unknown printer took a galley of type and scrambled it to make a type specimen
+                            book. It has survived not only five centuries, but also the leap into electronic 
+                            typesetting, remaining essentially unchanged.  
+                        </p>
+                
+                        <img class = "mx-auto col-lg-6 col-sm-12" src="../Images/Site.jpg" class="imagesSlider" alt="Construction site">  
+                                    
+                    </div>
+                </section>
                 <hr>
                         
-                <!--March content-->
-                
-                <div class ="row">
+                <!--Cathal: March content-->
+                <section class = "container" >
                     <h1 id = "march" class = "monthH1" >March</h1>
                     <h2>New Dogs</h2>
-                    <p class = "col-lg-12 col-sm-12">
-                        is simply dummy text of the printing and typesetting industry. 
-                        Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
-                        when an unknown printer took a galley of type and scrambled it to make a type specimen
-                        book. It has survived not only five centuries, but also the leap into electronic 
-                        typesetting, remaining essentially unchanged. 
-                    </p>
-                        
-                    <div id="slider" >
-                        <a href="javascript:void();" class="control_next">></a>
-                        <a href="javascript:void();" class="control_prev"><</a>
-                        <ul>
-                            <li>
-                                <img src="../Images/dog-2.jpg" class="imagesSlider" alt="dog">
-                            </li>
-                            <li>
-                                <img src="../Images/dog-1.jpg" class="imagesSlider" alt="dog">
-                            </li>
-                            <li>
-                                <img src="../Images/dog-3.jpg" class="imagesSlider" alt="dog">
-                            </li>
-                        </ul>  
-                    </div>    
-                </div>
+                    <div class = "row">
+                        <p class = "mx-auto col-lg-6 col-sm-12">
+                            is simply dummy text of the printing and typesetting industry. 
+                            Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
+                            when an unknown printer took a galley of type and scrambled it to make a type specimen
+                            book. It has survived not only five centuries, but also the leap into electronic 
+                            typesetting, remaining essentially unchanged. 
+                        </p>
+                        <!--Cathal: jQuery image slider (bootstrap stopped working on layout)-->
+                        <div id="slider" class = "mx-auto col-lg-6 col-sm-12">
+                            <!--Prev/next buttons. I added javascript:void() because when the buttons were clicked it brought the user back to the top of the site -->
+                            <a href="javascript:void();" class="control_next">></a>
+                            <a href="javascript:void();" class="control_prev"><</a>
+                            <ul>
+                                <li>
+                                    <img src="../Images/dog-2.jpg" class="imagesSlider" alt="Daia">
+                                </li>
+                                <li>
+                                    <img src="../Images/dog-1.jpg" class="imagesSlider" alt="dog1">
+                                </li>
+                                <li>
+                                    <img src="../Images/dog-3.jpg" class="imagesSlider" alt="dog2">
+                                </li>
+                            </ul>  
+                        </div>  
+                     
+                    </div>  
+                </section>
                 <hr>
-            
-
-                <!--April content-->
-                <div class = "row containerNews yellow">
+    
+                <!--Cathal: April content-->
+                <section class = "container" >
                     <h1 id = "april" class = "monthH1">April</h1>
                     <h2>New Construction</h2>
-                            
-                    <p class = "col-lg-4 col-sm-12">
-                        is simply dummy text of the printing and typesetting industry. 
-                        Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
-                        when an unknown printer took a galley of type and scrambled it to make a type specimen
-                        book. It has survived not only five centuries, but also the leap into electronic 
-                        typesetting, remaining essentially unchanged.  
+                    <div class = "row">        
+                        <p class = "mx-auto col-lg-6 col-sm-12">
+                            is simply dummy text of the printing and typesetting industry. 
+                            Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
+                            when an unknown printer took a galley of type and scrambled it to make a type specimen
+                            book. It has survived not only five centuries, but also the leap into electronic 
+                            typesetting, remaining essentially unchanged.  
 
-                        is simply dummy text of the printing and typesetting industry. 
-                        Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
-                        when an unknown printer took a galley of type and scrambled it to make a type specimen
-                        book. It has survived not only five centuries, but also the leap into electronic 
-                        typesetting, remaining essentially unchanged.  
+                            is simply dummy text of the printing and typesetting industry. 
+                            Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
+                            when an unknown printer took a galley of type and scrambled it to make a type specimen
+                            book. It has survived not only five centuries, but also the leap into electronic 
+                            typesetting, remaining essentially unchanged.  
 
-                        is simply dummy text of the printing and typesetting industry. 
-                        Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
-                        when an unknown printer took a galley of type and scrambled it to make a type specimen
-                        book. It has survived not only five centuries, but also the leap into electronic 
-                        typesetting, remaining essentially unchanged.   
-                    </p>
-
-                    <img class = "col-lg-7 col-sm-12" src="../Images/Site.jpg" class="imagesSlider" alt="dog">
-                </div>
+                            is simply dummy text of the printing and typesetting industry. 
+                            Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
+                            when an unknown printer took a galley of type and scrambled it to make a type specimen
+                            book. It has survived not only five centuries, but also the leap into electronic 
+                            typesetting, remaining essentially unchanged.   
+                        </p>
+                        <!--Cathal:Added image-->
+                        <img class = "mx-auto col-lg-6 col-sm-12" src="../Images/Site.jpg" class="imagesSlider" alt="Contruction site">
+                    </div>
+                </section>
                 <hr>
 
-                <!--May content-->
-                </div class = " row" >
+                <!--Cathal: May content-->
+                <section class = "container" >
                     <h1 id = "may" class = "monthH1">May</h1>
                     <h2>Dog checkup</h2>
+                    <div class = "row">
+                         <!--Added mp4 video using source tag-->
+                         <video class = "mx-auto col-lg-6 col-sm-12" controls>
+                            <source src="../Images/Dog_vid.mp4" type="video/mp4" alt = "dog at vet">
+                        </video>
 
-                    <p class = "col-lg-12 col-sm-12">
-                        
-                        is simply dummy text of the printing and typesetting industry. 
-                        Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
-                        when an unknown printer took a galley of type and scrambled it to make a type specimen
-                        book. It has survived not only five centuries, but also the leap into electronic 
-                        typesetting, remaining essentially unchanged.  
-                    
-                    </p>
-                    <video class = "col-lg-12 col-sm-12" controls>
-                        <source src="../Images/Dog_vid.mp4" type="video/mp4">
-                    </video>
-                    <hr>
-                </div>
+                        <p class = "mx-auto col-lg-6 col-sm-12">
+                            is simply dummy text of the printing and typesetting industry. 
+                            Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
+                            when an unknown printer took a galley of type and scrambled it to make a type specimen
+                            book. It has survived not only five centuries, but also the leap into electronic 
+                            typesetting, remaining essentially unchanged.
+                        </p>
+                       
+                    </div>
+                </section>
+                <hr>
 
                 <!--June content-->
                 </div class = "row">
                     <h1 id = "june" class = "monthH1">June</h1>
-                    <h2>New Construction</h2>
-
-                    <p class = "col-lg-4 col-sm-12">
-                        is simply dummy text of the printing and typesetting industry. 
-                        Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
-                        when an unknown printer took a galley of type and scrambled it to make a type specimen
-                        book. It has survived not only five centuries, but also the leap into electronic 
-                        typesetting, remaining essentially unchanged.
-                    
-                    </p>
-                    <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+                    <h2>Meet the Dogs</h2>
+                    <div class = "row">
+                        <p class = " mx-auto col-lg-6 col-sm-12">
+                            is simply dummy text of the printing and typesetting industry. 
+                            Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
+                            when an unknown printer took a galley of type and scrambled it to make a type specimen
+                            book. It has survived not only five centuries, but also the leap into electronic 
+                            typesetting, remaining essentially unchanged.
+                        
+                        </p>
+                        <!--Cathal: BootStrap Carousel/Added fade transitions in CSS/attempted to change speed of carousel with data interval-->
+                        <div id="carousel" class="carousel slide carousel-fade col-lg-6 col-sm-12" data-bs-ride="carousel" >
                         <div class="carousel-inner">
-                          <div class="carousel-item active">
-                            <img class="d-block w-100" src="../Images/dog-2.jpg" alt="First slide">
-                          </div>
-                          <div class="carousel-item">
-                            <img class="d-block w-100" src="../Images/dog-1.jpg" alt="Second slide">
-                          </div>
-                          <div class="carousel-item">
-                            <img class="d-block w-100" src="../Images/dog-3.jpg" alt="Third slide">
-                          </div>
+                            <div class="carousel-item active" data-interval="2000">
+                            <!-- added paths to images-->
+                            <img src="../Images/dog-1.jpg" class="d-block w-100"  alt="dog 1">
+                            </div>
+                            <div class="carousel-item" data-interval="2000">
+                            <img src="../Images/dog-2.jpg" class="d-block w-100" alt="daia">
+                            </div>
+                            <div class="carousel-item" data-interval="500">
+                            <img src="../Images/dog-3.jpg" class="d-block w-100" alt="dog 2">
+                            </div>
                         </div>
-                        <a class="carousel-control-prev" href="#carouselExampleControls;" role="button" data-slide="prev">
-                          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                          <span class="sr-only">Previous</span>
-                        </a>
-                        <a class="carousel-control-next" href="#carouselExampleControls;" role="button" data-slide="next">
-                          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                          <span class="sr-only">Next</span>
-                        </a>
-                      </div>
-
-                    
+                        <!--Prev/next buttons-->
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carousel" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carousel" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                        </div>
+                        
+                    </div>
+                </div>
+                <hr>
 
                 <!--July content-->
-                </div >
+                <!--Cathal: Quiz questions JavaScript-->
+                <section class = "container">
                     <h1 id = "july" class = "monthH1">July</h1>
-                    <h2>New Construction</h2>
+                    <h2>Fundraiser Quiz Night</h2>
 
-                    <p>
-                        is simply dummy text of the printing and typesetting industry. 
-                        Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
-                        when an unknown printer took a galley of type and scrambled it to make a type specimen
-                        book. It has survived not only five centuries, but also the leap into electronic 
-                        typesetting, remaining essentially unchanged.  
-                    
-                    </p>
-                </div>
+                    <div class ="row">
+                        <!--Cathal: Quiz inputs-->
+                        <div  class=" mx-auto col-lg-6 col-sm-12 quiz">
+                            <p>Try some of the quiz questions<p>
+                                <div id = "questionFormat">
+                                    <!--Question 1 input-->
+                                    <div id = "question1">
+                                        <h4 id = "question_1">Does a dog have 4 legs?</h4>
+                                        <!--label for text input, add font weight to differentiate from question text-->
+                                        <label for = "trueFalse" font weight = "500">T or F</label>
+                                        <!--text input-->
+                                        <input type = "text" id = "userAns1" name = "trueFalse">
+                                        <!--Submit input(button) calls question() function-->
+                                        <input type = "submit" id = "ansBtn1" onclick="question1()">
+                                    </div>
+
+                                    <!--Question 2 input-->
+                                    <div id = "question2">
+                                        <h4 id = "question_2">Do dogs fly?</h4>
+                                        <label for = "trueFalse" font weight = "500">T or F</label>
+                                        <input type = "text" id = "userAns2" name = "trueFalse">
+                                        <input type = "submit" id = "ansBtn2" onclick="question2()">
+                                    </div>
+
+                                    <!--Question 3 input-->
+                                    <div id = "question3">
+                                        <h4 id = "question_3">Do dogs bark</h4>
+                                        <label for = "trueFalse" font weight = "500">T or F</label>
+                                        <input type = "text" id = "userAns3" name = "trueFalse">
+                                        <input type = "submit" id = "ansBtn3" onclick="question3()">
+                                    </div>
+
+                                    <!--Submit input(button) calls getResult() function-->
+                                    <input type="submit" id = "resultsBtn" onclick="getResults()" name = "Results">
+                                    <!-- p tag to add text telling the user 'all questions must be answered' with .innerHTML-->
+                                    <p id = "unanswered"></p>
+                                </div>
+                        </div>
+
+                        <p class ="mx-auto col-lg-6 col-sm-12">
+                            is simply dummy text of the printing and typesetting industry. 
+                            Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
+                            when an unknown printer took a galley of type and scrambled it to make a type specimen
+                            book. It has survived not only five centuries, but also the leap into electronic 
+                            typesetting, remaining essentially unchanged.
+                        
+                        </p>
+                    </div>
+                </section>
                 <hr>
 
                 <!--August content-->
-                </div >
-                    <h1 id = "aug" class = "monthH1">August</h1>
+                <section class = "container">
+                    <h1 id = "dec" class = "monthH1">August</h1>
                     <h2>New Construction</h2>
-
-                    <p >
+                    <div class = "row">
+                        <p>
+                            is simply dummy text of the printing and typesetting industry. 
+                            Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
+                            when an unknown printer took a galley of type and scrambled it to make a type specimen
+                            book. It has survived not only five centuries, but also the leap into electronic 
+                            typesetting, remaining essentially unchanged.  
                         
-                        is simply dummy text of the printing and typesetting industry. 
-                        Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
-                        when an unknown printer took a galley of type and scrambled it to make a type specimen
-                        book. It has survived not only five centuries, but also the leap into electronic 
-                        typesetting, remaining essentially unchanged.  
-                    
-                    </p>
-                </div>
+                        </p>
+                    </div>
+                </section>
                 <hr>
 
                 <!--October content-->
-                </div >
-                    <h1 id = "oct" class = "monthH1">October</h1>
+                <section class = "container">
+                    <h1 id = "dec" class = "monthH1">October</h1>
                     <h2>New Construction</h2>
-
-                    <p>
-                        is simply dummy text of the printing and typesetting industry. 
-                        Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
-                        when an unknown printer took a galley of type and scrambled it to make a type specimen
-                        book. It has survived not only five centuries, but also the leap into electronic 
-                        typesetting, remaining essentially unchanged.  
-                    
-                    </p>
-                </div>
+                    <div class = "row">
+                        <p>
+                            is simply dummy text of the printing and typesetting industry. 
+                            Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
+                            when an unknown printer took a galley of type and scrambled it to make a type specimen
+                            book. It has survived not only five centuries, but also the leap into electronic 
+                            typesetting, remaining essentially unchanged.  
+                        
+                        </p>
+                    </div>
+                </section>
                 <hr>
 
                 <!--November content-->
-                </div >
-                    <h1 id = "nov" class = "monthH1">November</h1>
+                <section class = "container">
+                    <h1 id = "dec" class = "monthH1">November</h1>
                     <h2>New Construction</h2>
-                    <p>
-                        is simply dummy text of the printing and typesetting industry. 
-                        Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
-                        when an unknown printer took a galley of type and scrambled it to make a type specimen
-                        book. It has survived not only five centuries, but also the leap into electronic 
-                        typesetting, remaining essentially unchanged.  
-                    
-                    </p>
-                </div>
+                    <div class = "row">
+                        <p>
+                            is simply dummy text of the printing and typesetting industry. 
+                            Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
+                            when an unknown printer took a galley of type and scrambled it to make a type specimen
+                            book. It has survived not only five centuries, but also the leap into electronic 
+                            typesetting, remaining essentially unchanged.  
+                        
+                        </p>
+                    </div>
+                </section>
                 <hr>
 
                  <!--December content-->
-                </div >
+                <section class = "container">
                     <h1 id = "dec" class = "monthH1">December</h1>
                     <h2>New Construction</h2>
-                    <p>
-                        is simply dummy text of the printing and typesetting industry. 
-                        Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
-                        when an unknown printer took a galley of type and scrambled it to make a type specimen
-                        book. It has survived not only five centuries, but also the leap into electronic 
-                        typesetting, remaining essentially unchanged.  
-                    
-                    </p>
-                </div>
+                    <div class = "row">
+                        <p>
+                            is simply dummy text of the printing and typesetting industry. 
+                            Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
+                            when an unknown printer took a galley of type and scrambled it to make a type specimen
+                            book. It has survived not only five centuries, but also the leap into electronic 
+                            typesetting, remaining essentially unchanged.  
+                        
+                        </p>
+                    </div>
+                </section>
                 <hr>
-
-            </div>
-
         </section>
-     
+        
+        <!--Cathal: Email input for subscription. Used jQuery for valiadtion-->
         <section class = "container">
             <div class = "row" id  = "subscribe">
             <p class = "col-lg-4">Subscribe to the newsletter</p>
+            
             <form id = "subscribeForm">
                 <label for="emailSub" >Email</label>
+                <!--text Input-->
                 <input type="text" name="UserEmail" id="UserEmail" value="" size="32" />
+                <!--Submit button-->
                 <input type="submit" value="Submit" id="btn-submit" />
             </form>
+
             </div>
         </section>
         

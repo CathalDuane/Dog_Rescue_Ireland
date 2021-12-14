@@ -1,25 +1,23 @@
-h1{
-    font-family: 'Corben';
-    font-size: 18pt;
+
+h4{
+    margin-top: 1rem;
+    margin-bottom: 1rem;
 }
 
 p{
-    font-family: 'Nobile', sans-serif;;
+
     font-size: 12pt;
     padding-top: 1rem ;
 }
 
 a{
     text-align: center;
-    font-family: 'Nobile', sans-serif;;
     font-size: 12pt;
     padding-top: 1rem ;
     color: black;
     text-decoration: none;
     margin-bottom: 2rem;
 }
-
-
 
 /* Cathal: Contact Page Styles-------------------*/
 
@@ -43,11 +41,12 @@ a{
     margin-top: 1rem;
 }
 
-/* Event Page ------------------------*/
+/*Cathal: NewsletterPage ------------------------*/
 
 #monthList{
     margin:0;
     padding: 0;
+    background-color:  lightgoldenrodyellow;
 }
 .monthH1{
     margin-top: 3rem;
@@ -124,5 +123,23 @@ a.control_next {
     right: 0;
     border-radius: 2px 0 0 2px;
 }
-    
+
+/*Cathal: bootstrap fade in transitions  */
+.carousel-item {
+    transition: transform 0.6s ease-in-out;
+}
+  
+  .carousel-fade .active.carousel-item-start,
+  .carousel-fade .active.carousel-item-end {
+    transition: opacity 0.5s 0.5s;
+}
+
+.quiz{
+    background-color: lightgoldenrodyellow;
+}
+
+/* Cathal: Quiz section */
+#resultsBtn{
+    margin: 2rem;
+}
     
