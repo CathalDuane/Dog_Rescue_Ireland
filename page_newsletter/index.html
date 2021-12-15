@@ -285,33 +285,34 @@
                                 <div id = "questionFormat">
                                     <!--Question 1 input-->
                                     <div id = "question1">
-                                        <h4 id = "question_1">Does a dog have 4 legs?</h4>
+                                        <h4 id = "question_1">Do dogs have 4 legs?</h4>
                                         <!--label for text input, add font weight to differentiate from question text-->
-                                        <label for = "trueFalse" font weight = "500">T or F</label>
+                                        <label for = "trueFalse">T or F</label>
                                         <!--text input-->
                                         <input type = "text" id = "userAns1" name = "trueFalse">
                                         <!--Submit input(button) calls question() function-->
-                                        <input type = "submit" id = "ansBtn1" onclick="question1()">
+                                        <input type = "submit" id = "ansBtn1" onclick="question1()" class = "submitBtn">
                                     </div>
 
                                     <!--Question 2 input-->
                                     <div id = "question2">
                                         <h4 id = "question_2">Do dogs fly?</h4>
-                                        <label for = "trueFalse" font weight = "500">T or F</label>
+                                        <label for = "trueFalse">T or F</label>
                                         <input type = "text" id = "userAns2" name = "trueFalse">
-                                        <input type = "submit" id = "ansBtn2" onclick="question2()">
+                                        <input type = "submit" id = "ansBtn2" onclick="question2()" class = "submitBtn">
                                     </div>
 
                                     <!--Question 3 input-->
                                     <div id = "question3">
-                                        <h4 id = "question_3">Do dogs bark</h4>
-                                        <label for = "trueFalse" font weight = "500">T or F</label>
+                                        <h4 id = "question_3">Do dogs bark?</h4>
+                                        <label for = "trueFalse">T or F</label>
                                         <input type = "text" id = "userAns3" name = "trueFalse">
-                                        <input type = "submit" id = "ansBtn3" onclick="question3()">
+                                        <input type = "submit" id = "ansBtn3" onclick="question3()" class = "submitBtn">
                                     </div>
 
                                     <!--Submit input(button) calls getResult() function-->
-                                    <input type="submit" id = "resultsBtn" onclick="getResults()" name = "Results">
+                                    
+                                    <Button id = "resultsBtn" onclick="getResults()">Quiz Results</Button>
                                     <!-- p tag to add text telling the user 'all questions must be answered' with .innerHTML-->
                                     <p id = "unanswered"></p>
                                 </div>
@@ -417,26 +418,28 @@
 
 
 	
-        <!--Cathal: Footer-->
-        <footer class = "row">
+       <!--Cathal: Footer -->
+       <footer >
             <hr>
             <!--James: Icons Social links-->
-            <div class="col-1">
-                <img src="../img/social/facebook.jpg" alt="Facebook" height="50" width="50">
+            <div class ="row">
+                <div class = "row">
+                    <div class = "col-lg-2 col-sm-3">
+                        <img src="../img/social/facebook.jpg" alt="Facebook" height="50" width="50">
+                        <a href="https://www.facebook.com/DogsTrust/">Facebook</a>
+                    </div>
+                    <!-- <div class="col-1">
+                        <a class="col-3" href="https://www.facebook.com/DogsTrust/">Facebook</a>
+                    </div> -->
+                    <div class="col-lg-2 col-sm-3">
+                        <img src="../img/social/insta.jpg" alt="Instagram" height="50" width="50">
+                        <a href="https://www.instagram.com/mylovelyhorserescue/?hl=en">Instagram</a>
+                    </div>
+                
+                    <!--Cathal: back to top button-->
+                    <a class = "col-lg-2 col-sm-6 " href="#top">Back to top of page</a>
                 </div>
-                <div class="col-1">
-                <a class="col-12" href="https://www.facebook.com/DogsTrust/">Facebook</a>
-                </div>
-                <div class="col-1">
-                <img src="../img/social/insta.jpg" alt="Instagram" height="50" width="50">
-                </div>
-                <div class="col-1">
-                <a class="col-12" href="https://www.instagram.com/mylovelyhorserescue/?hl=en">Instagram</a>
-			</div>
-
-            <!--Cathal: back to top button-->
-            <a class = "col-4 " href="#top">Back to top of page</a>
-            
+            </div>    
         </footer>
 
 		<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
