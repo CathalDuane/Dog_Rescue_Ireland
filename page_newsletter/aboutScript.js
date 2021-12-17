@@ -73,7 +73,7 @@ $(document).ready(function() {
       });
   });
 
-//Cathal: True/False Game
+//Cathal: True/False Gamec
 //simple true false game with JavaScript
 let score = 0;
 let attempts = 0;
@@ -131,48 +131,39 @@ function getResults(){
 
 //new jQuery slider
 
-jQuery(document).ready(function ($) {
-    // creating a container variable to hold the 'UL' elements. It uses method chaining.
-    var container=$('div.slider')
-                                .css('overflow','hidden')
-                                .children('ul');
-    
-    /* 
-    On the event of mouse-hover, 
-        i) Change the visibility of Button Controls.
-        ii) SET/RESET the "intv" variable to switch between AutoSlider and Stop mode.
-    */
-    $('.gallery').hover(function( e ){
-        $('#slider-nav').toggle();
-        return e.type=='mouseenter'?clearInterval(intv):autoSlider();
-    });
-    
-    // Creating the 'slider' instance which will set initial parameters for the Slider.
-    var sliderobj= new slider(container,$('#slider-nav'));
-    /*
-    This will trigger the 'setCurrentPos' and 'transition' methods on click of any button
-     "data-dir" attribute associated with the button will determine the direction of sliding.
-    */
-    sliderobj.nav.find('button').on('click', function(){
-        sliderobj.setCurrentPos($(this).data('dir'));
-        sliderobj.transition();
-    });
-    
-    autoSlider(); // Calling autoSlider() method on Page Load.
-    
-    /* 
-    This function will initialize the interval variable which will cause execution of the inner function after every 2 seconds automatically.
-    */
-    function autoSlider()
-    {
-        return intv = setInterval(function(){
-            sliderobj.setCurrentPos('next');
-            sliderobj.transition();
-        }, 2000);
+var slideIndex = 1;
+displaySlide(slideIndex);
+
+function moveSlides(n) {
+    displaySlide(slideIndex += n);
+}
+
+function activeSlide(n) {
+    displaySlide(slideIndex = n);
+}
+
+/* Main function */
+function displaySlide(n) {
+    var i;
+    var totalslides = 
+        document.getElementsByClassName("slide");
+    var totaldots = 
+        document.getElementsByClassName("footerdot");
+      
+    if (n > totalslides.length) {
+        slideIndex = 1;
     }
-    
-});
-
-
-
-
+      
+    if (n < 1) {
+        slideIndex = totalslides.length;
+    }
+    for (i = 0; i < totalslides.length; i++) {
+        totalslides[i].style.display = "none";
+    }
+    for (i = 0; i < totaldots.length; i++) {
+        totaldots[i].className = 
+        totaldots[i].className.replace(" active", "");
+    }
+    totalslides[slideIndex - 1].style.display = "block";
+    totaldots[slideIndex - 1].className += " active";
+}
