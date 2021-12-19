@@ -20,6 +20,15 @@ a{
     margin-bottom: 2rem;
 }
 
+.nav-item{
+    padding-left: 7rem;
+    padding-right: 7rem;
+    
+}
+.navbar{
+    text-align: center;
+} 
+
 /* Cathal: Contact Page Styles-------------------*/
 
 .contactContainer{
@@ -41,6 +50,7 @@ a{
 .submitBtn{
     margin-top: 1rem;
 }
+
 
 /* Cathal: iframe google map responsive */
 .map-responsive{
